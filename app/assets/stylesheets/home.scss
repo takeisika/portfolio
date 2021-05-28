@@ -1,0 +1,240 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+body{
+    margin:0;
+}
+
+
+.title{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px;
+    padding-top:40px;
+    padding-bottom:20px;
+    margin:0;
+    color: rgb(195, 129, 221);
+    text-shadow: -1px -1px 0 rgb(204, 204, 204), 1px -1px 0 rgb(204, 204, 204), -1px 1px 0 rgb(204, 204, 204), 1px 1px 0 rgb(204, 204, 204);
+}
+
+
+.container{
+    width:100%;
+    height:auto;
+}
+
+
+
+
+//insp
+.insp{
+    display:flex;
+    justify-content: space-between;
+    width:70%;
+    margin:0 auto;
+    margin-top:90px;
+}
+
+.insp_video_wrapper video{
+    width:420px;
+    height:231px;
+    object-fit: cover;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    margin-right:35px;
+}
+
+.insp_letter{
+    margin-top:25px;
+}
+
+.first{
+    color:rgb(247, 229, 41);
+    margin:0;
+    font-weight: bolder;
+}
+
+.second{
+    color:rgb(241, 241, 241);
+    margin:0;
+}
+
+.third{
+    color:rgb(241, 241, 241);
+    margin:0;
+}
+
+.fourth a{
+    color:rgb(27, 149, 224);
+}
+
+.fourth a:hover{
+    color:rgb(0, 67, 109);
+}
+
+//
+
+
+
+//youtube
+
+.youtube{
+    display:flex;
+    justify-content: space-between;
+    width:70%;
+    margin:0 auto;
+    margin-top:110px;
+    text-align: center;
+}
+
+.youtube_wrapper{
+    width:420px;
+    height:231px;
+}
+
+.youtube_wrapper iframe{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+}
+
+.youtube_letter{
+    margin-top:75px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:35px;
+    margin-bottom:16px;
+    margin-right:80px;
+}
+.youtube_letter i{
+    padding:3px;
+}
+
+.youtube_link{
+    margin-right:80px;
+}
+.youtube_link a{
+    color:rgb(27, 149, 224);
+    margin:0;
+}
+
+.youtube_link a:hover{
+    color:rgb(0, 67, 109);
+}
+//
+
+
+
+
+
+//背景画像
+
+.img{
+    width:100%;
+    height:120%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+.background-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+    z-index:-10;
+}
+
+//
+
+
+
+@media (max-width: 390px) {
+
+    .insp{
+        display:block;
+        width:85%;
+        margin:0 auto;
+        margin-top:60px;
+        text-align: center;
+    }
+    .first{
+        color:rgb(247, 229, 41);
+        margin:0;
+        font-weight: bolder;
+        font-size:10px;
+    }
+    
+    .second{
+        color:rgb(241, 241, 241);
+        margin:0;
+        font-size:10px;
+        display:none;
+    }
+    
+    .third{
+        color:rgb(241, 241, 241);
+        margin:0;
+        font-size:10px;
+    }
+    
+    .fourth a{
+        color:rgb(27, 149, 224);
+        font-size:10px;
+    }
+    
+    .fourth a:hover{
+        color:rgb(0, 67, 109);
+    }
+    .insp_video_wrapper video{
+        width:63%;
+        height:120px;
+        object-fit: cover;
+        border: 1px solid #CCC;
+        border-radius: 2px;
+        margin-right:0;
+    }
+    .img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        background-size: cover;
+    }
+    .youtube{
+        display:block;
+        width:90%;
+        margin:0 auto;
+        margin-top:70px;
+        text-align:center;
+    }
+    .youtube_wrapper{
+        width:60%;
+        height:auto;
+        display:inline-block;
+    }
+    .youtube_letter{
+        margin-top:5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:23px;
+        margin-bottom:5px;
+        margin-right: 0;
+    }
+    .fourth{
+        margin:0;
+    }
+    .insp_letter{
+        margin-top:5px;
+    }
+    .youtube_link a{
+        font-size:10px;
+    }
+    .youtube_link{
+        margin:0;
+    }
+    
+}
